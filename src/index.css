@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* ─── Playful Neo-Brutalist Theme Tokens ─── */
+@theme {
+  --color-bg-primary: #fffbea; /* Warm cream/yellow */
+  --color-bg-card: #ffffff;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-accent-pink: #f472b6;
+  --color-accent-blue: #60a5fa;
+  --color-accent-yellow: #fde047;
+  --color-accent-green: #4ade80;
+  
+  --color-border-dark: #111827;
+}
+
+:root {
+  /* Colors */
+  --bg-primary: #fffbea;
+  --bg-card: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  
+  --border-dark: #111827;
+  --border-width: 3px;
+  
+  /* Neo-brutalist shadows (solid, offset) */
+  --shadow-hard: 6px 6px 0px 0px var(--border-dark);
+  --shadow-hard-hover: 2px 2px 0px 0px var(--border-dark);
+  --shadow-hard-xl: 12px 12px 0px 0px var(--border-dark);
+  
+  /* Borders */
+  --radius-fun: 24px;
+  --radius-pill: 9999px;
+
+  /* Easing */
+  --ease-bouncy: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --ease-snappy: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Base Overrides ─── */
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar { width: 0; height: 0; display: none; }
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(#d1d5db 2px, transparent 2px);
+  background-size: 32px 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+::selection {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* ─── Neo-Brutalist Utilities ─── */
+.fun-card {
+  background-color: var(--bg-card);
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--radius-fun);
+  box-shadow: var(--shadow-hard);
+  transition: transform 0.2s var(--ease-bouncy), box-shadow 0.2s var(--ease-bouncy);
+}
+
+.fun-card:hover {
+  transform: translate(4px, 4px);
+  box-shadow: var(--shadow-hard-hover);
+}
+
+.fun-button {
+  background-color: var(--bg-card);
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--radius-pill);
+  box-shadow: 4px 4px 0px 0px var(--border-dark);
+  transition: transform 0.2s var(--ease-bouncy), box-shadow 0.2s var(--ease-bouncy), background-color 0.2s ease;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.fun-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px var(--border-dark);
+}
+.fun-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px 0px var(--border-dark);
+}
+
+/* ─── Typography Tokens ─── */
+.section-title {
+  font-size: clamp(40px, 8vw, 80px);
+  line-height: 1;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px var(--border-dark);
+}
+.section-subtitle {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 600px;
+}
+.eyebrow {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  background-color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  border: 2px solid var(--border-dark);
+  box-shadow: 2px 2px 0px 0px var(--border-dark);
+}
+
+.section-padding {
+  padding: clamp(80px, 15vw, 160px) clamp(24px, 6vw, 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ─── Keyframe Animations ─── */
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes scrollRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
