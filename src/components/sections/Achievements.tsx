@@ -87,7 +87,7 @@ const AchievementCard = ({ achievement, index }: { achievement: typeof achieveme
     <motion.div
       ref={cardRef}
       style={{ rotate }}
-      initial={{ opacity: 0, y: 150, scale: 0.8 }}
+      initial={{ opacity: 0, y: 30, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: '-10%' }}
       whileHover={{ y: -20, scale: 1.05 }}

@@ -27,7 +27,6 @@ export const Projects = () => {
             <ProjectCard 
               key={project.id} 
               project={project} 
-              index={index} 
               accentColor={colors[index % colors.length]} 
               cardBg={bgColors[index % bgColors.length]}
             />
@@ -38,12 +37,10 @@ export const Projects = () => {
   );
 };
 
-const ProjectCard = ({ project, index, accentColor, cardBg }: { project: typeof projects[0]; index: number; accentColor: string; cardBg: string }) => {
-  const isEven = index % 2 === 0;
-  
+const ProjectCard = ({ project, accentColor, cardBg }: { project: typeof projects[0]; accentColor: string; cardBg: string }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 150, rotate: isEven ? -2 : 2 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0, rotate: 0 }}
       viewport={{ once: true, margin: '-20%' }}
       transition={{ type: 'spring', stiffness: 150, damping: 15 }}

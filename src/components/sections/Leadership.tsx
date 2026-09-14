@@ -56,8 +56,8 @@ const TimelineItem = ({ item, index }: { item: typeof journey[0]; index: number 
 
   return (
     <motion.div 
-      initial={{ opacity: 0, x: isEven ? 100 : -100, rotate: isEven ? 5 : -5 }}
-      whileInView={{ opacity: 1, x: 0, rotate: isEven ? -2 : 2 }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0, x: 0, rotate: isEven ? -2 : 2 }}
       viewport={{ once: true, margin: '-20%' }}
       transition={{ type: 'spring', stiffness: 150, damping: 15, delay: 0.1 }}
       className={`relative flex items-center justify-between w-full flex-col lg:flex-row ${

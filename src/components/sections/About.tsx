@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section id="about" className="section-padding min-h-screen flex items-center justify-center overflow-hidden">
       <motion.div 
-        initial={{ opacity: 0, y: 100, rotate: -5 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0, rotate: -1 }}
         viewport={{ once: true, margin: '-20%' }}
         transition={{ type: 'spring', stiffness: 100, damping: 15 }}
@@ -69,7 +69,7 @@ export const About = () => {
 
 const StatCard = ({ value, label, color, index }: { value: string; label: string; color: string; index: number }) => (
   <motion.div 
-    initial={{ opacity: 0, y: 50, rotate: 10 }}
+    initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0, rotate: index % 2 === 0 ? -3 : 3 }}
     viewport={{ once: true, margin: '-50px' }}
     whileHover={{ scale: 1.1, rotate: index % 2 === 0 ? -5 : 5, y: -10 }}
