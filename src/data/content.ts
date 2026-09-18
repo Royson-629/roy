@@ -27,9 +27,9 @@ export const projects = [
   {
     id: 1,
     title: 'AeroJobs',
-    description: 'A live tech hiring platform deployed on Railway. Built the core business logic and dynamic routing in Spring Boot, while letting AI design the sleek JSP frontend so I could stay happily in my backend comfort zone.',
-    stack: ['Java', 'Spring Boot', 'JSP', 'Railway'],
-    link: 'https://jobportals-production.up.railway.app/',
+    description: 'A live tech hiring platform deployed on Render. Built the core business logic and dynamic routing in Spring Boot, while letting AI design the sleek JSP frontend so I could stay happily in my backend comfort zone.',
+    stack: ['Java', 'Spring Boot', 'JSP', 'Render'],
+    link: 'https://jobportals-2.onrender.com/',
     repo: 'https://github.com/Royson-629/JobPortals',
     tag: 'Spring Boot App',
     image: '/aerojobs.png',
