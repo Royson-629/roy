@@ -1,6 +1,6 @@
 export const aboutStats = {
   cgpa: 9.10,
-  shipped: 2,
+  shipped: 4,
   championships: 3
 };
 
@@ -43,6 +43,26 @@ export const projects = [
     repo: 'https://github.com/Royson-629/MovieReview',
     tag: 'MVC Architecture',
     image: '/moviereview.jpg',
+  },
+  {
+    id: 3,
+    title: 'CampusGigs',
+    description: 'An SEO-focused gig board concept designed around ranking and discoverability for Mangaluru college students. The site pitches a hyperlocal marketplace where students list skills and nearby businesses post short paid gigs. The core focus was on SEO execution: keyword targeting, meta tags, sitemaps, structured data, backlink building, and Search Console optimization rather than complex backend functionality.',
+    stack: ['SEO', 'Optimization', 'Google Search Console', 'Vercel'],
+    link: 'https://d-mproject.vercel.app',
+    repo: 'https://github.com/Royson-629/DMproject',
+    tag: 'SEO & Landing Page',
+    image: '/campusgigs.jpg',
+  },
+  {
+    id: 4,
+    title: 'AirPath',
+    description: 'A concept pitch for reducing ambulance response times by using a drone as an early-warning scout. The drone flies ~90m ahead, detecting junctions and triggering green lights to clear the corridor. Built an interactive SVG dashboard simulating a live control-room view with real-time telemetry moving in sync along a mapped route. Presented as a paper at SDM College Mangaluru, reaching the final rounds.',
+    stack: ['SVG', 'Interactive UI', 'Simulation', 'Vercel'],
+    link: 'https://airpath-drone-assistant.vercel.app/',
+    repo: '',
+    tag: 'Simulation & Paper Presentation',
+    image: '/airpath.jpg',
   }
 ];
 
