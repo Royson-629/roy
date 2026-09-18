@@ -1,6 +1,6 @@
 export const aboutStats = {
   cgpa: 9.10,
-  shipped: 4,
+  shipped: 5,
   championships: 3
 };
 
@@ -63,6 +63,16 @@ export const projects = [
     repo: '',
     tag: 'Simulation & Paper Presentation',
     image: '/airpath.jpg',
+  },
+  {
+    id: 5,
+    title: 'AquaSafe',
+    description: 'A conceptual mockup for a predictive groundwater contamination system. Features a sensor network that logs TDS levels, uses an Isolation Forest model to filter hardware anomalies without false alarms, and employs a spatial-temporal prediction pipeline (GNN + LSTM) to forecast contamination travel over time and provide early warnings.',
+    stack: ['Machine Learning', 'GNN', 'LSTM', 'Anomaly Detection'],
+    link: 'https://aqua-safe-ground-water-analysis.vercel.app/',
+    repo: '',
+    tag: 'ML Architecture Concept',
+    image: '/aquasafe.jpg',
   }
 ];
 
