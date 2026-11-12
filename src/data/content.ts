@@ -1,7 +1,7 @@
 export const aboutStats = {
   cgpa: 9.10,
   shipped: 5,
-  championships: 3
+  championships: 5
 };
 
 export const skills = {
@@ -29,7 +29,7 @@ export const projects = [
     title: 'AeroJobs',
     description: 'A live tech hiring platform deployed on Render. Built the core business logic and dynamic routing in Spring Boot, while letting AI design the sleek JSP frontend so I could stay happily in my backend comfort zone.',
     stack: ['Java', 'Spring Boot', 'JSP', 'Render'],
-    link: 'https://jobportals-2.onrender.com/',
+    link: 'https://jobportals-0gn7.onrender.com',
     repo: 'https://github.com/Royson-629/JobPortals',
     tag: 'Spring Boot App',
     image: '/aerojobs.png',
@@ -78,17 +78,17 @@ export const projects = [
 
 export const journey = [
   {
-    year: '2026',
+    year: '2026-September',
     title: 'Overall Student Coordinator (IT Fest)',
     description: 'Orchestrated the technical chaos of the university-wide IT Fest. Managed servers, events, and people who forgot their passwords. Basically a professional firefighter.',
   },
   {
-    year: '2024-Present',
+    year: '2025-2026(December)',
     title: 'Student Team Lead (BCA)',
     description: 'Captaining my fellow coding nerds at St. Aloysius to secure Overall Championships. We come, we see, we compile without errors.',
   },
   {
-    year: '2024',
+    year: '2025-August',
     title: 'Assistant Head - IT Expo',
     description: 'Bossed around hardware/software lab allocations and made sure participants had working WiFi during the national IT Fest. Peak logistics era.',
   },
@@ -98,13 +98,21 @@ export const journey = [
     description: 'Opted for a Bachelor of Computer Applications. Found out software engineering is 10% writing code and 90% screaming at NullPointerExceptions.',
   },
   {
-    year: '2023',
+    year: '2023-2024',
     title: 'President/VP - YCS',
     description: 'Ran the Surathkal and Katipalla units for Young Catholic Students. Organized youth development initiatives, and ate a lot of free snacks.',
   }
 ];
 
 export const achievements = [
+  {
+    title: 'Frozen Logic decoder',
+    date: 'Nov 2026',
+    event: 'JOSHIANA 15.0',
+    description: 'Partcipated in this event just to win...Just me as always',
+    result: 'First-Runner',
+    image: '/achievements/frz.jpg',
+  },
   {
     title: 'Ideathon Champion',
     date: 'Feb 2026',
