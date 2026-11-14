@@ -25,7 +25,17 @@ export const skills = {
 
 export const projects = [
   {
-    id: 1,
+  id: 1,
+  title: 'E-Commerce Admin Dashboard',
+  description: 'A full-stack e-commerce admin dashboard built with Java and Spring Boot. Features include product and category management, CRUD operations, inventory management, and Cloudinary image uploads. Uses PostgreSQL for data persistence, with a React frontend developed primarily with AI assistance.',
+  stack: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Cloudinary', 'Vercel', 'Render'],
+  link: 'https://frontend-roan-kappa-1cnwum2q30.vercel.app',
+  repo: 'https://github.com/Royson-629/e-commerce',
+  tag: 'Full Stack Application',
+  image: '/ecommerce.png',
+},
+  {
+    id: 2,
     title: 'AeroJobs',
     description: 'A live tech hiring platform deployed on Render. Built the core business logic and dynamic routing in Spring Boot, while letting AI design the sleek JSP frontend so I could stay happily in my backend comfort zone.',
     stack: ['Java', 'Spring Boot', 'JSP', 'Render'],
@@ -35,7 +45,7 @@ export const projects = [
     image: '/aerojobs.png',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Movie Review System',
     description: 'My very first full MVC web application. Users can submit structured ratings on the frontend while I manage the chaos of JDBC drivers, DAO layers, and MySQL databases under the hood.',
     stack: ['Java Servlets', 'JDBC', 'Maven', 'MySQL'],
@@ -45,7 +55,7 @@ export const projects = [
     image: '/moviereview.jpg',
   },
   {
-    id: 3,
+    id: 4,
     title: 'CampusGigs',
     description: 'An SEO-focused gig board concept designed around ranking and discoverability for Mangaluru college students. The site pitches a hyperlocal marketplace where students list skills and nearby businesses post short paid gigs. The core focus was on SEO execution: keyword targeting, meta tags, sitemaps, structured data, backlink building, and Search Console optimization rather than complex backend functionality.',
     stack: ['SEO', 'Optimization', 'Google Search Console', 'Vercel'],
@@ -55,7 +65,7 @@ export const projects = [
     image: '/campusgigs.jpg',
   },
   {
-    id: 4,
+    id: 5,
     title: 'AirPath',
     description: 'A concept pitch for reducing ambulance response times by using a drone as an early-warning scout. The drone flies ~90m ahead, detecting junctions and triggering green lights to clear the corridor. Built an interactive SVG dashboard simulating a live control-room view with real-time telemetry moving in sync along a mapped route. Presented as a paper at SDM College Mangaluru, reaching the final rounds.',
     stack: ['SVG', 'Interactive UI', 'Simulation', 'Vercel'],
@@ -65,7 +75,7 @@ export const projects = [
     image: '/airpath.jpg',
   },
   {
-    id: 5,
+    id: 6,
     title: 'AquaSafe',
     description: 'A conceptual mockup for a predictive groundwater contamination system. Features a sensor network that logs TDS levels, uses an Isolation Forest model to filter hardware anomalies without false alarms, and employs a spatial-temporal prediction pipeline (GNN + LSTM) to forecast contamination travel over time and provide early warnings.',
     stack: ['Machine Learning', 'GNN', 'LSTM', 'Anomaly Detection'],
